@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Simulator</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custome css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Start Atm simulator -->
+    <section>
+    <div class="atm-container">
+        <h2>ATM Simulator</h2>
+        <div class="form-group">
+            <label for="pin">Enter PIN:</label>
+            <input type="password" class="form-control" id="pin" maxlength="4" placeholder="****">
+        </div>
+        <button class="btn btn-primary" id="submitBtn">Submit</button>
+
+        <div id="actions" style="display: none;">
+            <button class="btn btn-outline-dark" id="checkBalanceBtn">Check Balance</button>
+            <button class="btn btn-outline-dark" id="depositBtn">Deposit</button>
+            <button class="btn btn-outline-dark" id="withdrawBtn">Withdraw</button>
+            <button class="btn btn-outline-danger" id="logoutBtn">Logout</button>
+            <p id="balanceDisplay">Your balance is $3000</p>
+        </div>
+    </div>
+  </section>
+  <!-- End Atm simulator -->
+    <script src="script.js"></script>
+</body>
+</html>
